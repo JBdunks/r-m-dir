@@ -1,0 +1,12 @@
+.navigation {
+  background-color: black !important;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+#logo {
+  color: rgb(41, 176, 200);
+  font-size: 40px;
+  font-family: "Freckle Face", cursive;
+  text-shadow: -2px -2px 0 #70e057, 2px -2px 0 #70e057, -2px 2px 0 #70e057,
+    2px 2px 0 #70e057;
+}

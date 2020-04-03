@@ -1,0 +1,10 @@
+.searchRow {
+  display: flex;
+  padding-left: 4%;
+  background: gray;
+  align-items: left;
+}
+
+.searchDiv {
+  width: 20%;
+}

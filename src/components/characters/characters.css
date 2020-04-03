@@ -1,3 +1,14 @@
+.searchRow {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: gray;
+  align-items: center;
+}
+input {
+  color: white;
+}
+
 .characterImage {
   height: 100px;
   width: 100px;

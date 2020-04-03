@@ -1,20 +1,48 @@
 import React from "react";
-
+import data from "../../characters.json";
 import "./search.css";
 
-const Search = () => {
-  return (
-    <div className="navbar-fixed">
-      <nav className="searchRow">
-        <div className="searchDiv">Image</div>
-        <div className="searchDiv">Name</div>
-        <div className="searchDiv">Species</div>
-        <div className="searchDiv">Gender</div>
-        <div className="searchDiv">Location</div>
-        <div className="searchDiv">Status</div>
-      </nav>
-    </div>
-  );
-};
+var characters = data.results;
+console.log("search" + characters[0].name);
 
-export default Search;
+class Search extends React.Component {
+  state = {
+    search: "",
+    characters: characters
+  };
+
+  handleInputChange = event => {
+    // console.log(event.target.value);
+    if (event.target.name === "search") {
+      const searchTerm = event.target.value.toLowerCase();
+      console.log(searchTerm);
+
+      // const newList = characters.filter(character =>
+      //   character.toLowerCase().includes(searchTerm)
+      // );
+      // console.log(newList);
+    }
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+  render() {
+    return (
+      <>
+        <div className="navbar-fixed">
+          <nav className="searchRow">
+            <input
+              type="text"
+              name="search"
+              value={this.state.search}
+              onChange={this.handleInputChange}
+              placeholder="Search"
+            />
+          </nav>
+        </div>
+      </>
+    );
+  }
+}
+
+// export default Search;

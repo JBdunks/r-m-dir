@@ -179,6 +179,7 @@ class Characters extends React.Component {
             />
           </nav>
         </div>
+        <br />
 
         <table>
           <thead>

@@ -1,6 +1,5 @@
 .navigation {
   background-color: black !important;
-  font-size: 30px;
   border-bottom: 2px solid black;
 }
 #logo {
@@ -9,4 +8,6 @@
   font-family: "Freckle Face", cursive;
   text-shadow: -2px -2px 0 #70e057, 2px -2px 0 #70e057, -2px 2px 0 #70e057,
     2px 2px 0 #70e057;
+  height: 50px;
+  width: 500px;
 }

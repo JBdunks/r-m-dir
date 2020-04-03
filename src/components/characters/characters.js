@@ -6,24 +6,24 @@ var characters = data.results;
 
 class Characters extends React.Component {
   state = {
-    characters: characters
+    characters: characters,
   };
   ///===search function
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     if (event.target.name === "search") {
       console.log(event.target.value);
       const searchTerm = event.target.value.toLowerCase();
       console.log(searchTerm);
 
-      let newList = this.state.characters.filter(character => {
+      let newList = characters.filter((character) => {
         return character.name.toLowerCase().includes(searchTerm);
       });
 
       console.log(newList);
 
       this.setState({
-        // [event.target.name]: event.target.value
-        characters: newList
+        // [event.target.name]: event.target.value,
+        characters: newList,
       });
     }
   };
@@ -193,7 +193,7 @@ class Characters extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.characters.map(character => (
+            {this.state.characters.map((character) => (
               <tr key={character.id}>
                 <td>
                   <img

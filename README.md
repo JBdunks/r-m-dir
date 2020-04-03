@@ -1,4 +1,4 @@
-Project that renders a table of Rick and Morty characters and allows for sorting all of the data fields.
+Project that renders a table of Rick and Morty characters. The user is able to filter via the search bar on top and all the data columns are sortable.
 Built using React.
 
 http://jbdunks.github.io/r-m-dir

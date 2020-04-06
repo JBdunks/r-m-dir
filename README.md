@@ -3,4 +3,4 @@ Built using React.
 
 http://jbdunks.github.io/r-m-dir
 
-![alt text](public/screenCap.png "Rick and Morty Dir")
+![alt text](public/rmd.png "Rick and Morty Dir")
